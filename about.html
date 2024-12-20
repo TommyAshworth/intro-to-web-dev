@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/scripts.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400&display=swap" rel="stylesheet">
+    <title>About</title>
+</head>
+<body>
+    <!-- Navbar -->
+<header class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Book Haven Logo">
+        <span>Book Haven</span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="community.html">Community</a></li>
+        </ul>
+      </nav>
+      <div class="auth-buttons">
+        <button class="sign-in" onclick="showSignInAlert()">Sign In</button>
+        <button class="register" onclick="showRegisterAlert()">Subscribe</button>
+      </div>
+      <button class="hamburger" aria-label="Toggle Navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- About Us -->
+
+  <section class="about-us">
+    <h1 class="about-us-title">ABOUT US</h1>
+    <p class="about-us-subtitle">We are dedicated to providing world class service to our customers.</p>
+    <img src="images/about.jpg" alt="Description of the image" class="about-us-image">
+</section>
+
+<!-- FORM -->
+<section class="contact-form">
+    <h2>Contact Us</h2>
+    <form id="contactForm" class="form-container">
+        <div class="form-field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-field">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+
+        <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Enter your message here" required></textarea>
+        </div>
+
+        <button type="submit" onclick="submit()">Submit</button>
+    </form>
+
+</section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Book Haven. All rights reserved.</p>
+    <div class="social-media">
+      <a href="#" class="social-icon" aria-label="X">
+        <img src="images/x.png" alt="X Logo">
+      </a>
+      <a href="#" class="social-icon" aria-label="Instagram">
+        <img src="images/instagram.png" alt="Instagram Logo">
+      </a>
+      <a href="#" class="social-icon" aria-label="YouTube">
+        <img src="images/youtube.png" alt="YouTube Logo">
+      </a>
+      <a href="#" class="social-icon" aria-label="LinkedIn">
+        <img src="images/linkedin.png" alt="LinkedIn Logo">
+      </a>
+    </div>
+  </footer>
+  <script src="javascript/scripts.js"></script>
+</body>
+</html>

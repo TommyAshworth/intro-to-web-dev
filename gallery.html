@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/scripts.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400&display=swap" rel="stylesheet">
+    <title>Gallery</title>
+</head>
+<body>
+    <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Book Haven Logo">
+        <span>Book Haven</span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="community.html">Community</a></li>
+        </ul>
+      </nav>
+      <div class="auth-buttons">
+        <button class="sign-in" onclick="showSignInAlert()">Sign In</button>
+        <button class="register" onclick="showRegisterAlert()">Subscribe</button>
+      </div>
+      <button class="hamburger" aria-label="Toggle Navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Grid -->
+  <section class="image-grids">
+    <h2>Our Inventory</h2>
+    <div class="image-grid">
+      <div class="image-container">
+        <img src="images/Client3_Book1.png" alt="Image 1" class="gallery-image">
+        <span class="price-tag">$19.99</span>
+        <button class="btn" onclick="addToCart('$19.99 Book1')">Add to Cart</button>
+        <button class="view-cart" onclick="viewCart()">View Cart</button>
+      </div>
+      <div class="image-container">
+        <img src="images/Client3_Book2.png" alt="Image 2" class="gallery-image">
+        <span class="price-tag">$19.99</span>
+        <button class="btn" onclick="addToCart('$19.99 Book2')">Add to Cart</button>
+        <button class="view-cart" onclick="viewCart()">View Cart</button>
+      </div>
+      <div class="image-container">
+        <img src="images/Client3_Book3.png" alt="Image 3" class="gallery-image">
+        <span class="price-tag">$19.99</span>
+        <button class="btn" onclick="addToCart('$19.99 Book3')">Add to Cart</button>
+        <button class="view-cart" onclick="viewCart()">View Cart</button>
+      </div>
+      <div class="image-container">
+        <img src="images/Client3_Magazine1.png" alt="Image 4" class="gallery-image">
+        <span class="price-tag">$24.99</span>
+        <button class="btn" onclick="addToCart('$24.99 Magazine1')">Add to Cart</button>
+        <button class="view-cart" onclick="viewCart()">View Cart</button>
+      </div>
+      <div class="image-container">
+        <img src="images/Client3_Magazine2.png" alt="Image 5" class="gallery-image">
+        <span class="price-tag">$24.99</span>
+        <button class="btn" onclick="addToCart('$24.99 Magazine2')">Add to Cart</button>
+        <button class="view-cart" onclick="viewCart()">View Cart</button>
+      </div>
+      <div class="image-container">
+        <img src="images/Client3_Magazine3.png" alt="Image 6" class="gallery-image">
+        <span class="price-tag">$24.99</span>
+        <button class="btn" onclick="addToCart('$24.99 Magazine3')">Add to Cart</button>
+        <button class="view-cart" onclick="viewCart()">View Cart</button>
+      </div>
+      </div>
+</section>
+
+<!-- Cart Modal -->
+<!-- Cart Modal -->
+<div class="cart-modal" id="cartModal">
+  <div class="cart-content">
+    <h2>Your Cart</h2>
+    <div id="cartItems">
+      
+    </div>
+    <button class="btn1" onclick="clearCart()">Clear Cart</button>
+    <button class="btn2" onclick="processOrder()">Process Order</button>
+    <button class="btn3" onclick="closeCart()">Close</button>
+  </div>
+</div>
+
+
+   <!-- Reviews -->
+
+   <section class="reviews">
+    <h2>Latest Reviews</h2>
+    <div class="review-container">
+        <div class="review">
+            <div class="review-header">
+                <img src="images/johndoe.jpg" alt="John's Logo" class="review-logo">
+                <span class="reviewer-name">John Doe</span>
+            </div>
+            <p class="review-text">"Excellent product! Highly recommend it."</p>
+            <div class="rating">★★★★★</div>
+        </div>
+        <div class="review">
+            <div class="review-header">
+                <img src="images/jane.jpeg" alt="Jane's Logo" class="review-logo">
+                <span class="reviewer-name">Jane Smith</span>
+            </div>
+            <p class="review-text">"Great customer service, very satisfied!"</p>
+            <div class="rating">★★★★★</div>
+        </div>
+        <div class="review">
+            <div class="review-header">
+                <img src="images/alex.jpg" alt="Alex's Logo" class="review-logo">
+                <span class="reviewer-name">Alex Johnson</span>
+            </div>
+            <p class="review-text">"I love it! Will purchase again."</p>
+            <div class="rating">★★★★★</div>
+        </div>
+    </div>
+</section>
+
+   <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Book Haven. All rights reserved.</p>
+    <div class="social-media">
+      <a href="#" class="social-icon" aria-label="X">
+        <img src="images/x.png" alt="X Logo">
+      </a>
+      <a href="#" class="social-icon" aria-label="Instagram">
+        <img src="images/instagram.png" alt="Instagram Logo">
+      </a>
+      <a href="#" class="social-icon" aria-label="YouTube">
+        <img src="images/youtube.png" alt="YouTube Logo">
+      </a>
+      <a href="#" class="social-icon" aria-label="LinkedIn">
+        <img src="images/linkedin.png" alt="LinkedIn Logo">
+      </a>
+    </div>
+  </footer>
+
+  <script src="javascript/scripts.js"></script>
+</body>
+</html>
